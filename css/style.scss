@@ -1,0 +1,65 @@
+@import './bootstrap/bootstrap.css';
+
+$color_blue-light: #eaf2f1;
+$color_purple-light: #c7b1d7;
+
+html,
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #f9f9f9;
+}
+
+.hidden {
+	display: none;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-1 {
+	flex: 1 1 0%;
+}
+
+.navbar {
+	background-color: $color_blue-light;
+	color: $color_purple-light;
+}
+
+#content-container {
+	min-height: calc(100vh - 58px);
+	display: flex;
+	#sidebar {
+		background-color: rgba($color_purple-light, 0.4);
+		width: 250px;
+		overflow-y: auto;
+		order: 2;
+		border-left: rgb(230, 230, 230) 0.1rem solid;
+
+		.data-label {
+			font-size: 0.8rem;
+			font-variant: all-small-caps;
+			margin-bottom: -0.2rem;
+		}
+	}
+}
+
+#login {
+	max-width: 600px;
+	.feedback {
+		color: var(--bs-form-invalid-color);
+	}
+}
+
+#charts {
+	padding-top: 2rem;
+	padding-right: 2rem;
+}
+
+.graph-container {
+	background-color: rgba(255, 255, 255, 0.85);
+	border-radius: 0.4rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 2rem;
+	padding: 2rem;
+}
